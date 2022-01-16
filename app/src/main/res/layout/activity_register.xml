@@ -20,7 +20,7 @@
         android:layout_marginTop="50dp"/>
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/emailReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
@@ -31,7 +31,7 @@
         android:textColor="@color/black"
         android:layout_marginTop="20dp"/>
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/passwordReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -42,7 +42,7 @@
         android:textColor="@color/black"
         android:layout_marginTop="20dp"/>
     <EditText
-        android:id="@+id/confirm"
+        android:id="@+id/confirmReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Confirm Password"
@@ -54,7 +54,7 @@
         android:layout_marginTop="20dp"/>
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_Reg"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="110dp"
