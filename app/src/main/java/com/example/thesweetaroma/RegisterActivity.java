@@ -1,5 +1,6 @@
 package com.example.thesweetaroma;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
@@ -10,6 +11,13 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -19,8 +27,8 @@ public class RegisterActivity extends AppCompatActivity {
     String emailPattern= "[a-zA-z0-9._-]+@[a-z]+\\.[a-z]+";
     ProgressDialog progressDialog;
 
-
-    //TheSweetAroma mAuth;
+       FirebaseAuth mAuth;
+       FirebaseUser mUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +41,8 @@ public class RegisterActivity extends AppCompatActivity {
         confirmReg = findViewById(R.id.confirmReg);
         btn_Reg = findViewById(R.id.btn_Reg);
         progressDialog = new ProgressDialog(this);
+        mAuth = FirebaseAuth.getInstance();
+        mUser = mAuth.getCurrentUser();
 
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
                 alreadyhaveAccount.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +83,29 @@ public class RegisterActivity extends AppCompatActivity {
             progressDialog.setTitle("Registration");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
+
+            mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                   if(task.isSuccessful())
+                   {
+                       progressDialog.dismiss();
+                       sendUserToNextActivity();
+                       Toast.makeText(RegisterActivity.this, "Registration successful", Toast.LENGTH_SHORT).show();
+                   } else
+                   {
+                       progressDialog.dismiss();
+                       Toast.makeText(RegisterActivity.this, ""+task.getException(), Toast.LENGTH_SHORT).show();
+                   }
+                }
+            });
         }
+
+    }
+
+    private void sendUserToNextActivity() {
+        Intent intent = new Intent(RegisterActivity.this,HomeActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }
