@@ -24,7 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
     TextView alreadyhaveAccount;
     EditText emailReg,passwordReg,confirmReg;
     Button btn_Reg;
-    String emailPattern= "[a-zA-z0-9._-]+@[a-z]+\\.[a-z]+";
+    String emailPattern = "[a-zA-z0-9._-]+@[a-z]+\\.[a-z]+";
     ProgressDialog progressDialog;
 
        FirebaseAuth mAuth;
@@ -39,7 +39,8 @@ public class RegisterActivity extends AppCompatActivity {
         emailReg= findViewById(R.id.emailReg);
         passwordReg =findViewById(R.id.passwordReg);
         confirmReg = findViewById(R.id.confirmReg);
-        btn_Reg = findViewById(R.id.btn_Reg);
+        btn_Reg = (Button) findViewById(R.id.btn_Reg);
+
         progressDialog = new ProgressDialog(this);
         mAuth = FirebaseAuth.getInstance();
         mUser = mAuth.getCurrentUser();
@@ -73,14 +74,14 @@ public class RegisterActivity extends AppCompatActivity {
         {
             passwordReg.setError("Enter proper password");
         }
-        else if(!password.equals(confirmReg))
+        else if(password.equals(confirmReg))
         {
             confirmReg.setError("Password not match both field");
         }
         else
         {
             progressDialog.setMessage("Please wait while Registration");
-            progressDialog.setTitle("Registration");
+            progressDialog.setTitle("Register");
             progressDialog.setCanceledOnTouchOutside(false);
             progressDialog.show();
 
