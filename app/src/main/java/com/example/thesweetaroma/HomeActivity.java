@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class HomeActivity extends AppCompatActivity {
     TextView menu;
 
-    Button btn_Cookies,btn_Cupcakes,btn_Chocolatebar;
+    Button btn_Cookies,btn_Cupcakes,btn_Chocolatebar,btn_profile;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +21,32 @@ public class HomeActivity extends AppCompatActivity {
         btn_Cookies = findViewById(R.id.btn_Cookies);
         btn_Cupcakes = findViewById(R.id.btn_Cupcakes);
         btn_Chocolatebar = findViewById(R.id.btn_Chocolatebar);
+
+//        btn_profile.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(HomeActivity.this, CustomizeActivity.class);
+//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+//                startActivity(intent);
+//            }
+//        });
+
+        btn_Cookies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, CustomizeActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+        btn_Cupcakes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, CustomizeActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
 
         btn_Chocolatebar.setOnClickListener(new View.OnClickListener() {
             @Override
