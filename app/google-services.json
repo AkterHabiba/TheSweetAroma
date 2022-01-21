@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202991106742",
+    "project_id": "the-sweet-aroma",
+    "storage_bucket": "the-sweet-aroma.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202991106742:android:3e84b80302e746c1d70417",
+        "android_client_info": {
+          "package_name": "com.example.thesweetaroma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202991106742-dmorcp5kbb0jbjgavqdsir9ef2qlje67.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHfTjt17jCi-oZ81zw5grxn4VeTMoe8ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202991106742-dmorcp5kbb0jbjgavqdsir9ef2qlje67.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
