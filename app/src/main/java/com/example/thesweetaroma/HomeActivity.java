@@ -22,14 +22,14 @@ public class HomeActivity extends AppCompatActivity {
         btn_Cupcakes = findViewById(R.id.btn_Cupcakes);
         btn_Chocolatebar = findViewById(R.id.btn_Chocolatebar);
 
-//        btn_profile.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(HomeActivity.this, CustomizeActivity.class);
-//                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-//                startActivity(intent);
-//            }
-//        });
+        btn_profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
 
         btn_Cookies.setOnClickListener(new View.OnClickListener() {
             @Override
