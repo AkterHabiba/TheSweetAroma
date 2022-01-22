@@ -16,13 +16,7 @@
         android:layout_margin="20dp"
         android:layout_marginLeft="20dp"
         android:text="Profile" />
-    <TextView
-        android:id="@+id/txt_user"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingBottom="16dp"
-        android:paddingTop="16dp"
-        android:textSize="20dp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -83,7 +77,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/logOut"
+            android:id="@+id/btn_logOut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Logout"
