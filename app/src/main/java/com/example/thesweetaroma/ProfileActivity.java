@@ -9,6 +9,8 @@ import android.widget.Button;
 
 public class ProfileActivity extends AppCompatActivity {
     Button btn_logOut;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -19,10 +19,12 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import java.util.Locale;
+
 public class RegisterActivity extends AppCompatActivity {
 
     TextView alreadyhaveAccount;
-    EditText emailReg,passwordReg,confirmReg;
+    EditText emailReg,passwordReg,confirmReg,userReg;
     Button btn_Reg;
     String emailPattern = "[a-zA-z0-9._-]+@[a-z]+\\.[a-z]+";
     ProgressDialog progressDialog;
@@ -39,6 +41,7 @@ public class RegisterActivity extends AppCompatActivity {
         emailReg= findViewById(R.id.emailReg);
         passwordReg =findViewById(R.id.passwordReg);
         confirmReg = findViewById(R.id.confirmReg);
+       // userReg = findViewById(R.id.userReg);
         btn_Reg = (Button) findViewById(R.id.btn_Reg);
 
         progressDialog = new ProgressDialog(this);
@@ -64,6 +67,7 @@ public class RegisterActivity extends AppCompatActivity {
     private void PerforAuth() {
         String email= emailReg.getText().toString();
         String password = passwordReg.getText().toString();
+
         String confirmPassword = confirmReg.getText().toString();
 
         if(!email.matches(emailPattern))
