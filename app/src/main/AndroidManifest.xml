@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TheSweetAroma">
         <activity
+            android:name=".ToppingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ShapeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FlavourActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="false" />
         <activity

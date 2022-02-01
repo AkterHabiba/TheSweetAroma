@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FAF9F6"
+    tools:context=".ShapeActivity">
+
+  <ImageButton
+      android:id="@+id/btn_Backshape"
+      android:layout_width="87dp"
+      android:layout_height="wrap_content"
+      android:background="#FAF9F6"
+      android:src="@drawable/backpage">
+
+  </ImageButton>
+
+  <TextView
+        android:id="@+id/shape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:text="Shape"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <CheckBox
+        android:id="@+id/shSquare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"
+        android:text="Square" />
+
+    <CheckBox
+        android:id="@+id/shRound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Round"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"
+        />
+
+    <CheckBox
+        android:id="@+id/shHeart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heart"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"
+        />
+
+    <CheckBox
+        android:id="@+id/shStar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Star"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"/>
+
+    <Button
+        android:id="@+id/btn_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:textSize="40dp"
+
+        android:text="Continue" />
+
+</LinearLayout>

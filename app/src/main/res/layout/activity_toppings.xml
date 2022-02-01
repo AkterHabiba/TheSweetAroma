@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".ToppingsActivity">
+
+    <ImageButton
+        android:id="@+id/btn_Backtopping"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:background="#FAF9F6"
+        android:src="@drawable/backpage">
+
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/toppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:text="Toppings"
+        android:textColor="@color/black"
+        android:textSize="50dp" />
+
+    <CheckBox
+        android:id="@+id/ChocoChips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        android:text="Mixed Choco Chips" />
+
+    <CheckBox
+        android:id="@+id/Almond"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Solid Almonds"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        />
+
+    <CheckBox
+        android:id="@+id/dragees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dragees"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"
+        />
+
+    <CheckBox
+        android:id="@+id/sprinkles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sprinkles"
+        android:layout_marginTop="20dp"
+        android:textSize="35dp"/>
+
+    <Button
+        android:id="@+id/btn_Topping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:textSize="40dp"
+
+        android:text="Continue" />
+
+</LinearLayout>

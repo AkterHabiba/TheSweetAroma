@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".FlavourActivity">
+
+    <ImageButton
+        android:id="@+id/btn_BackMenu"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:background="#FAF9F6"
+        android:src="@drawable/backpage">
+    </ImageButton>
+
+    <TextView
+        android:id="@+id/flavour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="20dp"
+        android:text="Flavour " />
+
+    <CheckBox
+        android:id="@+id/Butter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"
+        android:text="Butter" />
+
+    <CheckBox
+        android:id="@+id/Chocolate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chocolate"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"
+        />
+
+    <CheckBox
+        android:id="@+id/Vanila"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vanila"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"
+        />
+
+    <CheckBox
+        android:id="@+id/RedVelvet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Red Velvet"
+        android:layout_marginTop="20dp"
+        android:textSize="60dp"/>
+
+    <Button
+        android:id="@+id/btn_flavour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/button"
+        android:textStyle="bold"
+        android:textSize="40dp"
+
+        android:text="Continue" />
+
+
+</LinearLayout>
