@@ -120,12 +120,13 @@
 
     </LinearLayout>
     <Button
+        android:id="@+id/btn_logout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_logout"
+
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:text="Login"
+        android:text="Logout"
         android:backgroundTint="@color/white"
         android:background="@drawable/button"
         android:textSize="20dp"

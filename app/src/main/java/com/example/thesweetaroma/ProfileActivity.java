@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -22,16 +23,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProfileActivity extends AppCompatActivity {
+
     Button btn_logOut;
     TextView ProfileTx;
-
+   ImageButton btn_Backprofile;
     List<User> list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        //btn_logOut = findViewById(R.id.btn_logOut);
+       btn_logOut = findViewById(R.id.btn_logout);
+       btn_Backprofile = findViewById(R.id.btn_Backprofile);
+
+       btn_Backprofile.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(ProfileActivity.this, HomeActivity.class);
+               intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+               startActivity(intent);
+           }
+       });
+
+       btn_logOut.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(ProfileActivity.this, MainActivity.class);
+               intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+               startActivity(intent);
+           }
+       });
+
 
 //        User user = new User();
 //
