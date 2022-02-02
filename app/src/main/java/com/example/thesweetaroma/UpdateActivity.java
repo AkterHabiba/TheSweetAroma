@@ -32,7 +32,7 @@ public class UpdateActivity extends AppCompatActivity {
         btnSave = (Button) findViewById(R.id.btn_save);
 
         mFirebaseInstance = FirebaseDatabase.getInstance();
-        mFirebaseDatabase = mFirebaseInstance.getReference("users");
+        mFirebaseDatabase = mFirebaseInstance.getReference("User");
 
         btnSave.setOnClickListener(new View.OnClickListener() {
             @Override

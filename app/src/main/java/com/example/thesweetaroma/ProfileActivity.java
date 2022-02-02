@@ -9,6 +9,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -22,6 +23,7 @@ import java.util.List;
 
 public class ProfileActivity extends AppCompatActivity {
     Button btn_logOut;
+    TextView ProfileTx;
 
     List<User> list;
 
@@ -29,7 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
-        btn_logOut = findViewById(R.id.btn_logOut);
+        //btn_logOut = findViewById(R.id.btn_logOut);
 
         User user = new User();
 
@@ -68,4 +70,5 @@ public class ProfileActivity extends AppCompatActivity {
 
     }
 }
+
 
