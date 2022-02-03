@@ -32,6 +32,7 @@ public class ToppingsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        btn_Topping= findViewById(R.id.btn_Topping);
 
         btn_Topping.setOnClickListener(new View.OnClickListener() {
             @Override
