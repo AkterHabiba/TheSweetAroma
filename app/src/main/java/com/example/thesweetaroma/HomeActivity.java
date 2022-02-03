@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -22,6 +23,7 @@ public class HomeActivity extends AppCompatActivity {
         btn_Cupcakes = findViewById(R.id.btn_Cupcakes);
         btn_Chocolatebar = findViewById(R.id.btn_Chocolatebar);
         btn_profile = findViewById(R.id.btn_profile);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         btn_profile.setOnClickListener(new View.OnClickListener() {
             @Override

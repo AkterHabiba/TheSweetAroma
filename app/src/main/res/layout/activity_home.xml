@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/homepic"
+    android:background="@drawable/cover"
     tools:context=".HomeActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp">
 
         <Button
             android:id="@+id/btn_profile"
@@ -28,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="120dp"
             android:background="@drawable/button"
-            android:paddingLeft="135dp"
+            android:paddingLeft="130dp"
             android:text="Menu"
             android:textColor="#FF9E80"
             android:textSize="48dp" />

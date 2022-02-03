@@ -7,31 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.ImageButton;
-import android.widget.TextView;
 
-public class ToppingsActivity extends AppCompatActivity {
-    ImageButton btn_Backtopping;
-
-    Button btn_Topping;
-    TextView toppings;
-    CheckBox ChocoChips,Almond,dragees,sprinkles;
+public class ConfirmActivity extends AppCompatActivity {
+    Button btn_logout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_toppings);
-        btn_Backtopping = findViewById(R.id.btn_Backtopping);
+        setContentView(R.layout.activity_confirm);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
-        btn_Backtopping.setOnClickListener(new View.OnClickListener() {
+        btn_logout = findViewById(R.id.btn_logout);
+        btn_logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ToppingsActivity.this, ShapeActivity.class);
+                Intent intent = new Intent(ConfirmActivity.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
             }
         });
-
     }
 }

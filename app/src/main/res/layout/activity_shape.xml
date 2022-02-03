@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    android:background="#FAF9F6"
+    android:background="@drawable/cover"
     tools:context=".ShapeActivity">
 
   <ImageButton
@@ -25,6 +25,7 @@
         android:layout_marginLeft="110dp"
         android:layout_marginTop="20dp"
         android:text="Shape"
+      android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="50dp" />
 

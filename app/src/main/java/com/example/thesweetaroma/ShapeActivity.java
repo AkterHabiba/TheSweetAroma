@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
@@ -22,6 +23,7 @@ public class ShapeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_shape);
         btn_Backshape = findViewById(R.id.btn_Backshape);
         btn_shape = findViewById(R.id.btn_shape);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         btn_shape.setOnClickListener(new View.OnClickListener() {
             @Override
