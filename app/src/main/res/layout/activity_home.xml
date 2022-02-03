@@ -36,6 +36,7 @@
             android:textSize="48dp" />
 
 
+
         <Button
             android:id="@+id/btn_Cookies"
             android:layout_width="match_parent"
@@ -43,13 +44,15 @@
             android:layout_marginTop="200dp"
             android:text="Cookies"
             android:textSize="50dp" />
-    <Button
-        android:id="@+id/btn_Cupcakes"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="290dp"
-        android:textSize="50dp"
-        android:text="Cupcakes" />
+
+        <Button
+            android:id="@+id/btn_Cupcakes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:padding="10dp"
+            android:text="Cupcakes"
+            android:textSize="50dp" />
     <Button
         android:id="@+id/btn_Chocolatebar"
         android:layout_width="match_parent"
