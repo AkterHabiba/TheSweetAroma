@@ -4,67 +4,288 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/cover"
-    tools:context=".HomeActivity">
+    android:background="#E8E8E8"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        android:layout_margin="10dp">
+        android:layout_height="wrap_content"
+       >
 
         <Button
             android:id="@+id/btn_profile"
-            android:layout_width="200dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
-            android:background="@drawable/button"
-            android:paddingRight="20dp"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/black"
+
             android:text="Profile"
             android:textColor="#FF9E80"
-            android:textSize="40dp" />
+            android:textSize="30dp" />
 
         <TextView
             android:id="@+id/menu"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="120dp"
-            android:background="@drawable/button"
-            android:paddingLeft="130dp"
+            android:layout_marginTop="60dp"
+
+            android:paddingLeft="160dp"
             android:text="Menu"
             android:textColor="#FF9E80"
-            android:textSize="48dp" />
-
-
-
-        <Button
-            android:id="@+id/btn_Cookies"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
-            android:text="Cookies"
-            android:textSize="50dp" />
-
-        <Button
-            android:id="@+id/btn_Cupcakes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="290dp"
-            android:padding="10dp"
-            android:text="Cupcakes"
-            android:textSize="50dp" />
-    <Button
-        android:id="@+id/btn_Chocolatebar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
-        android:textSize="40dp"
-        android:text="Chocolate Bar" />
-
-
-
+            android:textSize="30dp" />
 
 
     </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:src="@drawable/cookies" />
+
+                    <Button
+                        android:id="@+id/btn_Cookies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:text="Cookies"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+
+                     <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:src="@drawable/macaroons" />
+
+                    <Button
+                        android:id="@+id/btn_Macroons"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:text="Macroons"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:src="@drawable/cookies" />
+
+                    <Button
+                        android:id="@+id/btn_Donut"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:text="Donut"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:src="@drawable/cookies" />
+
+                    <Button
+                        android:id="@+id/btn_Cupcake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:text="CupCake"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:src="@drawable/brownies" />
+
+                    <Button
+                        android:id="@+id/btn_Brownies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:text="Brownies"
+                        android:paddingBottom="10dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="170dp"
+                        android:src="@drawable/cakepop" />
+
+                    <Button
+                        android:id="@+id/btn_Cakepop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@color/white"
+                        android:text="Cakepop"
+                        android:paddingBottom="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
 
 </LinearLayout>
